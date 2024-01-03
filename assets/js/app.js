@@ -36,6 +36,21 @@ window.addEventListener("resize", () => {
    }
 });
 
+//scroll bar on top
+document.addEventListener('DOMContentLoaded', function () {
+    window.onscroll = function () {
+        updateScrollBar();
+    };
+});
+
+function updateScrollBar() {
+    const scrollBar = document.querySelector('.scroll-bar');
+    const scrollPosition = window.scrollY;
+    const totalHeight = document.body.scrollHeight - window.innerHeight;
+    const percentageScrolled = (scrollPosition / totalHeight) * 100;
+    scrollBar.style.width = percentageScrolled + '%';
+}
+
 
 // products 
 var cartCount = 0,

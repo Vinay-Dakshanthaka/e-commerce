@@ -52,7 +52,8 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Oxygen', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 400;
   line-height: 1.5;
@@ -60,6 +61,20 @@ body {
   color: var(--color-white-100);
   background-color: #040481de;
 }
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #151680; 
+  border-radius: 2px; 
+}
+
 
 /* preloader */
 .preloader {
@@ -90,6 +105,28 @@ body {
 }
 /* preloader ends  */
 
+/* Scroll bar container styles */
+.scroll-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #f0f0f0; 
+  z-index: 1000;
+}
+
+/* Scroll bar styles */
+.scroll-bar {
+  width: 0;
+  height: 100%;
+  background-color: #0f4674; 
+}
+
+i{
+  cursor: pointer;
+  transition: all 0.2s ;
+}
 main {
   overflow: hidden;
 }
@@ -591,7 +628,7 @@ a{
 
 /* Add this to your existing CSS file or create a new one */
 #video-section {
-  background-color: #048181;
+  background-color: #375FBF;
   padding: 20px;
 }
 
@@ -643,6 +680,7 @@ a{
 #continuous-slide-section {
   padding:  0;
   background-color: #3498db;
+
 }
 
 .continuous-slide-container {
@@ -658,7 +696,12 @@ a{
 .logo {
   width: 100px; /* Set the width of each logo/image */
   height: auto;
+  object-fit: contain;
   margin-right: 20px; /* Adjust spacing between images */
+}
+
+#logo-slider{
+  margin-top: -40px;
 }
 
 @keyframes slideAnimation {
@@ -688,12 +731,12 @@ a{
   position: relative;
   overflow: hidden;
   width: 200px;
-  height: 240px;
+  height: 260px;
   display: inline-block;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.45);
   margin: 20px;
-  padding: 15px;
+  /* padding: 15px;  */
 }
 .container .product img {
   position: relative;
@@ -709,11 +752,13 @@ a{
   transform: scale(1.1);
 }
 .container .product h2 {
-  text-align: left;
+  text-align: center;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 4px;
+  padding: 5px;
+  padding: 15px;
 }
 .container .product .description {
   text-align: left;
@@ -734,14 +779,16 @@ a{
   font-weight: bold;
   float: right;
   padding: 10px;
-  border: 2px solid #00fefe;
+  padding: 5px;
+  /* border: 2px solid #00fefe; */
   border-radius: 20px;
   bottom: 10px;
   right: 10px;
-  color: #00fefe;
+  color: white;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.2s ease;
+  background-color: #2463eb;
 }
 .container .product .btn.ok {
   background-color: rgba(0, 254, 254, 0.4);
@@ -751,12 +798,12 @@ a{
   content: "";
   color: #fff;
 }
-.container .product .btn:hover {
+/* .container .product .btn:hover {
   padding-right: 25px;
 }
 .container .product .btn:hover:after {
   margin-left: 5px;
-}
+} */
 .container .product .btn:after {
   font-family: "simple-line-icons";
   content: "";
@@ -768,17 +815,18 @@ a{
 }
 .container .product .quickview {
   position: absolute;
-  bottom: 20px;
-  font-size: 11px;
-  color: #fff;
+  bottom: 15px;
+  font-size: 12px;
+  color: #000;
+  font-weight: bolder;
   cursor: pointer;
   margin-left: -90px;
 }
-.container .product .quickview:before {
+/* .container .product .quickview:before {
   font-family: "simple-line-icons";
   content: "";
   margin-right: 3px;
-}
+} */
 
 .quickviewContainer {
   position: fixed;
@@ -830,7 +878,7 @@ a{
 }
 
 #products{
-  background-color:#F3F3F3 ;
+  background-color:#375FBF ;
   border-radius: 10px;
   box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.05);
 }
@@ -882,12 +930,7 @@ letter-spacing: .7px;
 font-size: 13px;
 font-family: 'gilroy',sans-serif;
 }
-.foot1 img
-{
-  height: 80px;
-  width: 90px;
-  padding-top: 5px;
-}
+
 
 
 #footer .foot2, .foot3,.foot4, p
