@@ -154,6 +154,7 @@ video {
   margin: 0 auto;
   padding: 6rem 0 1rem;
   background-color: #040481de;
+  z-index: -1;
 }
 
 .container {
@@ -246,6 +247,7 @@ video {
   box-shadow: var(--shadow-medium);
 }
 
+
 .header {
   position: fixed;
   top: 0;
@@ -260,6 +262,7 @@ video {
   background: #040481;
   box-shadow: var(--shadow-medium);
 }
+
 
 .navbar {
   display: flex;
