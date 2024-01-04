@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings FAQ</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <style>
+   
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #040481;
+        }
+        /* section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        } */
+
+        .navigation{
+            margin-top: -9.6rem;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10%;
+            background-color: white;
+        }
+
+        .faq-column {
+            flex: 48%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signup.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                            
+                        </ul>
+            </nav>
+        </div>
+    </section>
+
+   
+
+    <section>
+        <div class="faq-container">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(1, 1)">What types of paintings do you offer?</div>
+                    <div class="faq-answer" id="faq-answer-1-1">We offer a variety of paintings, including landscapes, portraits, and abstract art.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(2, 1)">How can I purchase a painting?</div>
+                    <div class="faq-answer" id="faq-answer-2-1">You can purchase a painting by visiting our online store and selecting the painting you like. Follow the checkout process to complete your purchase.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(3, 1)">How do I care for my paintings?</div>
+                    <div class="faq-answer" id="faq-answer-3-1">To care for your paintings, keep them away from direct sunlight, maintain a stable temperature and humidity, and dust them gently with a soft brush or microfiber cloth.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(4, 1)"> Can I request a custom painting?</div>
+                    <div class="faq-answer" id="faq-answer-4-1">Absolutely! We offer custom painting services. Contact us with your ideas, preferences, and specifications, and we'll work with you to create a unique piece of art.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(5, 1)"> Are the paintings signed by the artist?</div>
+                    <div class="faq-answer" id="faq-answer-5-1">Yes, all our paintings are signed by the artist. The signature is usually located in a discreet yet visible area on the front or back of the canvas.
+                    </div>
+                </div>
+
+                <!-- Add more FAQ items for the first column -->
+            </div>
+
+            <div class="faq-column">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(1, 2)">What materials are used in the paintings?</div>
+                    <div class="faq-answer" id="faq-answer-1-2">We use high-quality materials such as professional-grade canvases, archival paints, and varnishes to ensure the longevity and durability of our paintings.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(2, 2)">Can I return a painting if I'm not satisfied?</div>
+                    <div class="faq-answer" id="faq-answer-2-2">Yes, we have a return policy. If you're not satisfied with your purchase, please contact us within a specified timeframe for information on the return process and possible refunds.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(3, 2)">Are the colors of the paintings accurate in the photos?</div>
+                    <div class="faq-answer" id="faq-answer-3-2">While we strive to represent the colors accurately, please note that the appearance may vary slightly due to different monitor settings. We recommend checking multiple images and contacting us for additional details if needed.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(4, 2)">Can I commission a replica of a sold painting?</div>
+                    <div class="faq-answer" id="faq-answer-4-2">While we don't replicate sold paintings exactly, we can create a similar custom piece inspired by the sold artwork. Contact us for more details on commissioning a unique piece.</div>
+                </div>
+
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(5, 2)"> Are your paintings ready to hang?</div>
+                    <div class="faq-answer" id="faq-answer-5-2">Yes, our paintings are typically stretched on a wooden frame and come with hanging hardware. They are ready to hang and enjoy right out of the box.</div>
+                </div>
+                <!-- Add more FAQ items for the second column -->
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <div id="footer">
+            <!-- foot 1 -->
+            <div class="foot1" data-aos="fade-right" data-aos-delay="150">
+
+                <a href="#" class="brand text-center"><img src="./assets/img/logo.png" alt="" width="80px"
+                        height="80px"></a>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+
+            </div>
+
+            <!-- foot2 -->
+            <div class="foot2" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Company</b></h3>
+                <br>
+
+                <p><a href="">About Us</a></p>
+                <p><a href="">Contact Us</a></p>
+                <p><a href="">Terms & Conditions</a></p>
+            </div>
+
+            <!-- foot3 -->
+            <div class="foot3" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Acount</b></h3>
+                <br>
+                <p><a href="">Register</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Become a member</a></p>
+            </div>
+
+            <!-- foot 4 -->
+            <div class="foot4" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Contact</b></h3>
+                <br>
+                <p><a href="">Account</a></p>
+                <p><a href=>Get help</a></p>
+            </div>
+        </div>
+
+        <div id="btmfoot" style="padding: 0;">
+            <p>copyright @paintplus all right reserved powered by paint plus</p>
+        </div>
+    </section>
+  
+    <script>
+        function toggleAnswer(questionId, columnId) {
+            var answer = document.getElementById("faq-answer-" + questionId + "-" + columnId);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+</html>

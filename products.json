@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    },
+    
+    {
+        "id": 2,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    },
+    
+    {
+        "id": 3,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    },
+    {
+        "id": 4,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    },
+    
+    {
+        "id": 5,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    },
+    
+    {
+        "id": 6,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    },
+    
+    {
+        "id": 7,
+        "name":" Berger Paint",
+        "price": 200,
+        "image": "./assets/img/products/berger-paint.png",
+        "description": "Berger Paints: Renowned for superior quality, Berger offers a diverse range of vibrant, long-lasting paints, elevating homes and environments effortlessly."
+    }
+    
+]

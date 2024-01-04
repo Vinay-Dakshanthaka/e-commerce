@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h5 {
+            color: #007bff;
+        }
+
+        /* form {
+            margin-top: 20px;
+        } */
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .add-button {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        
+        @media (max-width: 600px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="navigation" id="admin-navbar" style="margin-top: -3rem;">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="#">Sign Up</a>
+                <ul class="nav-dropdown">
+                    <li>
+                        <a href="./signUp.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </li>
+              <li>
+                <a href="#">Others</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="./productupload.html">Add Products</a>
+                  </li>
+                  <li>
+                    <a href="./contact.html">Contatct Us</a>
+                  </li>
+                  <li>
+                    <a href="./cart.html">Cart</a>
+                  </li>
+                  <li>
+                    <a href="./faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="track.html">Track Order</a>
+                  </li>
+                  <li>
+                    <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+    <div class="container mb-3 mt-5">
+        <!-- Upload images -->
+        <div class="mt-4">
+            <h5 class="text-center"><strong>Product And Info Upload</strong></h5>
+        </div>
+
+        <!-- Add product information form -->
+        <form id="productInfoForm" class="mb-3">
+
+            <!-- Manufacturer Section -->
+            <div class="col-sm-6 sm-3 mx-auto">
+                <div class="form-group w-75 d-inline-block me-4 mb-3">
+                    <label for="manufacturerDropdown" class="mb-2">Select Manufacturer:</label>
+                    <select class="form-control border-primary" id="manufacturer-dropdown">
+                        <!-- Manufacturer options will be populated dynamically -->
+                        <option value="">Please select</option>
+                    </select>
+                </div>
+                <span id="add-manufacturer-button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#manufacturerModal">Add</span>
+            </div>
+
+            <!-- Category Section -->
+            <div class="col-sm-6 sm-3 mx-auto">
+                <div class="form-group w-75 d-inline-block me-4 mb-3">
+                    <label for="categoryDropdown" class="mb-2">Select Category:</label>
+                    <select class="form-control border-primary" id="categoryDropdown">
+                        <!-- Category options will be populated dynamically -->
+                        <option value="">Please select</option>
+                    </select>
+                </div>
+                <span id="add-category-button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#categoryModal">Add</span>
+            </div>
+
+            <div class="col-sm-6 sm-3 mx-auto">
+                <label for="productName" class="form-label">Product Name:</label>
+                <input type="text" class="form-control border-primary" id="productName" name="productName"
+                    placeholder="Product Name"><br>
+            </div>
+
+            <div class="col-sm-6 sm-3 mx-auto">
+                <label for="productPrice" class="form-label">Product Price:</label>
+                <input type="number" class="form-control border-primary" id="productPrice" name="productPrice"
+                    placeholder="Product Price"><br>
+            </div>
+            <div class="col-sm-6 sm-3 mx-auto">
+                <label for="productImage" class="form-label">Product Image:</label>
+                <input type="file" class="form-control border-primary" id="productImage" accept="image/*"
+                    style="height: auto;"><br>
+            </div>
+
+            <div class="col-sm-6 sm-3 mx-auto">
+                <!--Product Description Section (Initially Hidden) -->
+                <div class="form-group" id="productDescriptionSection">
+                    <label for="P=productDescription">Product Description:</label>
+                    <textarea class="form-control" id="product-description" name="productDescription"
+                        placeholder="Please enter the description related this product" rows="6"></textarea>
+                </div>
+            </div><br>
+
+            <!-- product Details -->
+            <div class="col-sm-6 sm-3 mx-auto">
+                <div class="form-group" id="ProductDetailsSection">
+                    <label for="ProductDetails">Product Details:</label>
+                    <textarea class="form-control" id="product-details" name="ProductDetails"
+                        placeholder="Please enter the details related this product" rows="10"></textarea>
+                </div>
+            </div><br>
+
+            <!-- product specification -->
+            <div class="col-sm-6 sm-3 mx-auto">
+                <div class="form-group" id="ProductSpecification">
+                    <label for="ProductSpecification">Product Specifications:</label>
+                    <textarea class="form-control" id="product-specifications" name="ProductSpecification"
+                        placeholder="Please enter the specifications related this product" rows="10"></textarea>
+                </div>
+            </div><br>
+
+            <div class="d-flex justify-content-around">
+                <div>
+                    <button type="button" id="uploadProductButton" class="btn btn-primary">Upload Product</button>
+                </div>
+                <div>
+                    <a href="product-edit.html" class="btn btn-primary" role="button">Manage Products</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+</html>

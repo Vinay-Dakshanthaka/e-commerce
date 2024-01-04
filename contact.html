@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <title>Contact</title>
+  <style>
+    /* Contact us page  */
+
+    .contact-section {
+      background-image: url(./img/slide1.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 3;
+      padding-top: 7rem;
+      padding-bottom: 50px;
+      font-family: 'gilroy', sans-serif;
+    }
+
+    .contact h1 {
+      font-family: 'gilroy', sans-serif;
+      font-size: 30px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+
+
+    .section-header {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      color: rgb(48, 43, 43);
+      font-weight: bold;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .section-header p {
+      color: rgb(128, 120, 120);
+      letter-spacing: .6px;
+    }
+
+    .row {
+      display: flex;
+      flwx-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .contact-info {
+      width: 50%;
+    }
+
+    .contact-info-item {
+      display: flex;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+    .contact-info-icon {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      margin-top: 5px;
+      /* margin-left: 50px; */
+
+    }
+
+    .contact-info-icon i {
+      font-size: 25px;
+      color: #040481de;
+      line-height: 50px;
+    }
+
+    .contact-info-icon i:hover {
+      transform: scale(1.2);
+    }
+
+    .contact-info-content {
+      /* margin-left: 10px; */
+
+    }
+
+    .contact-info-content h4 {
+      /* color: #1da9c0; */
+      color: #040481de;
+      font-size: 1.4em;
+      margin-left: 10px;
+      /* font-size: 15px; */
+      margin-bottom: 5px;
+    }
+
+    .contact-info-content p {
+      /* color: lightgray; */
+      color: rgb(128, 120, 120);
+      letter-spacing: .8px;
+      font-size: 1em;
+      margin-left: 20px;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 40px;
+      width: 45%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 5px;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .contact-form h2 {
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact-form .input-box {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contact-form .input-box input,
+    .contact-form .input-box textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+    }
+
+    .contact-form .input-box span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #666;
+    }
+
+    .contact-form .input-box input:focus~span,
+    .contact-form .input-box textarea:focus~span {
+      color: #e91e63;
+      font-size: 12px;
+      transform: translateY(-20px);
+    }
+
+    .contact-form .input-box input[type="submit"] {
+      width: 100%;
+      background: #040481de;
+      color: #FFF;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #040481de;
+      transition: 0.5s;
+    }
+
+    .contact-form .input-box input[type="submit"]:hover {
+      background: #FFF;
+      color: #040481de;
+    }
+
+    .foot1 img {
+      height: 80px;
+      width: 80px;
+      margin-left: 27px;
+    }
+
+    @media (max-width: 991px) {
+      section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .contact-info {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+
+      .contact-form {
+        width: 100%;
+      }
+
+      .contact h1 {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+  </style>
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="#">Sign Up</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="./signup.html">Sign Up</a>
+              </li>
+              <li>
+                <a href="./login.html">Login</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Others</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="./aboutus.html">About Us</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contatct Us</a>
+              </li>
+              <li>
+                <a href="./cart.html">Cart</a>
+              </li>
+              <li>
+                <a href="./faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="./track.html">Track Order</a>
+              </li>
+              <li>
+                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+              </li>
+
+            </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- contact section start  -->
+  <section class="contact-section">
+
+    <div class="section-header">
+      <div class="container" style="margin-top: 60px;">
+        <h2>Contact <span style="color: #040481de;padding-top: 50px;">Us</span></h2>
+        <p style="letter-spacing: .6px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+          galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+
+    <div class="container" id="container-form"
+      style="margin-top: -50px; background-color: aliceblue;border-radius: 5px;">
+      <div class="row" style="padding: 0px 60px;">
+
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p>4671 Sugar Camp Road,<br /> Owatonna, Minnesota, <br />55060</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+
+            <div class="contact-info-content" style="margin-left: 44px;">
+              <h4 style="margin-left: -30px;">Phone</h4>
+              <p style="margin-left: -15px;">571-457-2321</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4>Email</h4>
+              <p>ntamerrwael@mfano.ga</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="" id="contact-form">
+            <h2>Send Message</h2>
+            <div class="input-box">
+              <input type="text" required="true" name="" placeholder="Full Name">
+              <!-- <span>Full Name</span> -->
+            </div>
+
+            <div class="input-box">
+              <input type="email" required="true" name="" placeholder="Email">
+              <!-- <span>Email</span> -->
+            </div>
+
+            <div class="input-box">
+              <textarea required="true" name="" placeholder="Type your Message..."></textarea>
+              <!-- <span>Type your Message...</span> -->
+            </div>
+
+            <div class="input-box">
+              <input type="submit" value="Send" name="">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- contact section end  -->
+
+  <section>
+    <div id="footer">
+      <!-- foot 1 -->
+      <div class="foot1" data-aos="fade-right" data-aos-delay="150">
+
+        <a href="#" class="brand text-center"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+
+      </div>
+
+      <!-- foot2 -->
+      <div class="foot2" data-aos="fade-left" data-aos-delay="150">
+        <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Company</b></h3>
+        <br>
+
+        <p><a href="">About Us</a></p>
+        <p><a href="">Contact Us</a></p>
+        <p><a href="">Terms & Conditions</a></p>
+      </div>
+
+      <!-- foot3 -->
+      <div class="foot3" data-aos="fade-left" data-aos-delay="150">
+        <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Acount</b></h3>
+        <br>
+        <p><a href="">Register</a></p>
+        <p><a href="">Return Policy</a></p>
+        <p><a href="">Become a member</a></p>
+      </div>
+
+      <!-- foot 4 -->
+      <div class="foot4" data-aos="fade-left" data-aos-delay="150">
+        <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Contact</b></h3>
+        <br>
+        <p><a href="">Account</a></p>
+        <p><a href=>Get help</a></p>
+      </div>
+    </div>
+
+    <div id="btmfoot">
+      <p>copyright @paintplus all right reserved powered by paint plus</p>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+</body>
+
+</html>

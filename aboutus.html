@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-slider {
+            max-width: 600px;
+            /* Set your desired maximum width */
+            margin: 0 auto;
+            /* Center the slider on the screen */
+            overflow: hidden;
+        }
+
+        .slider-container {
+            display: flex;
+            width: 300%;
+            /* Increase width to accommodate three slides (100% per slide) */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+        }
+
+        /* Add these styles to center the images within the slides */
+        .slide img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjust other styles as needed */
+
+
+        .about-us,
+        .services,
+        .videos {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .services,
+        .videos {
+            text-align: center;
+        }
+
+        .service-box,
+        .video-box {
+            width: calc(25% - 40px);
+            /* 25% width for each box with margin */
+            margin: 20px;
+            box-sizing: border-box;
+            float: left;
+            /* Ensure boxes stay in a single row */
+        }
+
+        .video-box {
+            width: calc(50% - 40px);
+            /* 50% width for each video box with margin */
+            height: 600px;
+        }
+
+        .service-box img,
+        .video-box iframe {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .service-box h3,
+        .video-box h3,
+        .service-box p,
+        .video-box p {
+            text-align: center;
+        }
+
+
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .service-box,
+            .video-box {
+                width: calc(50% - 20px);
+            }
+
+            .video-box {
+                height: auto;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            footer {
+                padding: 5px 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .slider-container {
+                width: 100%;
+            }
+
+            .slide {
+                width: 100%;
+            }
+        }
+
+        .content-section {
+            background-color: #fff;
+            /* Adjust background color as needed */
+            text-align: center;
+            padding: 40px 0;
+            /* Adjust padding as needed */
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            /* Set your desired maximum width */
+            margin: 0 auto;
+            /* Center the content container */
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .content-container {
+                max-width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .content-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signup.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+
+                        </ul>
+            </nav>
+        </div>
+    </section>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Welcome to Our Story</h2>
+            <h3>Discover Our Journey</h3>
+            <p>We are a passionate team dedicated to providing exceptional services. Our journey is marked by
+                innovation, quality, and commitment to our clients.</p>
+        </div>
+    </section>
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <div class="slide"><img src="/assets/img/banner-img-removebg-preview.png" alt="Image 1"></div>
+            <div class="slide"><img src="/assets/img/image-2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="/assets/img/image-3.jpg" alt="Image 3"></div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <img src="/assets/img/products/free-ship.png" alt="Service 1">
+                <h3>Free Shipping</h3>
+                <p>Get free delivery on ordering </p>
+            </div>
+            <div class="service-box">
+                <img src="/assets/img/products/24X7.jpeg" alt="Service 2">
+                <h3>24X7</h3>
+                <p>Four your query we are always available</p>
+            </div>
+            <div class="service-box">
+                <img src="/assets/img/products/10-Days-Logo-banner.jpg" alt="Service 3">
+                <h3>Return Policy</h3>
+                <p>You can return ur prodcut if any damage is there!!</p>
+            </div>
+            <div class="service-box">
+                <img src="/assets/img/products/payment-secure.jpeg" alt="Service 4">
+                <h3>Secure Payment</h3>
+                <p>You can make your make securely without any queries</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="videos">
+        <div class="container">
+            <h2>Watch Our Videos</h2>
+            <div class="video-box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
+                    allowfullscreen></iframe>
+                <h3>Video 1</h3>
+                <p>Description for Video 1.</p>
+            </div>
+            <div class="video-box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0"
+                    allowfullscreen></iframe>
+                <h3>Video 2</h3>
+                <p>Description for Video 2.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+        <div id="footer">
+            <!-- foot 1 -->
+            <div class="foot1" data-aos="fade-right" data-aos-delay="150">
+
+                <a href="#" class="brand text-center"><img src="./assets/img/logo.png" alt="" width="80px"
+                        height="80px"></a>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+
+            </div>
+
+            <!-- foot2 -->
+            <div class="foot2" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Company</b></h3>
+                <br>
+
+                <p><a href="">About Us</a></p>
+                <p><a href="">Contact Us</a></p>
+                <p><a href="">Terms & Conditions</a></p>
+            </div>
+
+            <!-- foot3 -->
+            <div class="foot3" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Acount</b></h3>
+                <br>
+                <p><a href="">Register</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Become a member</a></p>
+            </div>
+
+            <!-- foot 4 -->
+            <div class="foot4" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Contact</b></h3>
+                <br>
+                <p><a href="">Account</a></p>
+                <p><a href=>Get help</a></p>
+            </div>
+        </div>
+
+        <div id="btmfoot">
+            <p>copyright @paintplus all right reserved powered by paint plus</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sliderContainer = document.querySelector('.slider-container');
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                const slideWidth = document.querySelector('.slide').offsetWidth;
+                sliderContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+                showSlide(currentIndex);
+            }
+
+            setInterval(nextSlide, 2000); // Change slide every 3 seconds
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+
+</body>
+
+</html>

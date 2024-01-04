@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/orderList.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+</head>
+
+<body>
+
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signup.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                        </ul>
+                        <li id="avatar-link">
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="30px" height="30px" id="avatar" style="display: inline; padding: 3px; padding-bottom: none;">Name</span></a>
+                        </li>
+            </nav>
+        </div>
+    </section>
+    <div class="container" style="padding-top: 7rem;">
+        <div class="customer_details orderList">
+            <div class="orderTop">
+                <h2 class="hidden-xs">My Orders</h2>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search all orders" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="order_tab">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="order_tab">Orders</li>
+                    <li class="tab-link" data-tab="buy_again">Buy Again</li>
+                    <li class="tab-link" data-tab="open_orders">Open Orders</li>
+                    <li class="tab-link" data-tab="cancelled_orders">Cancelled Orders</li>
+                </ul>
+                <div class="orderFilter">
+                    <label>1 order <span>placed in</span></label>
+                    <select>
+                        <option value="">Last 30 Days</option>
+                        <option value="">Past 6 Month</option>
+                        <option value="">2019</option>
+                        <option value="">2018</option>
+                    </select>
+                </div>
+            </div>
+            <div id="order_tab" class="orderCardWrap tab-content1 current">
+                <div class="orderCard">
+                    <div class="orderHead">
+                        <ul class="orderLeft">
+                            <li>
+                                <p>ORDER PLACED <span>04-01-2024</span></p>
+                            </li>
+                            <li>
+                                <p>TOTAL <span>₹200</span></p>
+                            </li>
+                            <li>
+                                <p>SHIP TO <span class="customerName">Customer Name</span>
+                                    <span class="cstmrInfo">
+                                        <strong>Customer Name</strong> Lorem Ipsum is simply dummy text
+                                    </span>
+                                </p>
+
+                            </li>
+                        </ul>
+                        <div class="invoiceDetails">
+                            <p>ORDER # 171-8448362-6456308 <span><a href="#">Order Details</a></span> <span
+                                    class="showInvoice"><a href="javascript:void(0)">Invoice <i
+                                            class="fa fa-chevron-down" aria-hidden="true"></i></a></span></p>
+                            <div class="invioceModel">
+                                <ul>
+                                    <li><a href="#">Invoice 1</a></li>
+                                    <li><a href="#">Invoice 1</a></li>
+                                    <li><a href="#">Invoice 1</a></li>
+                                </ul>
+                                <span class="modelClose"><i class="fa fa-times" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Delivered 04-Jan-2024</h3>
+                        <p>Package was handed to a receptionist</p>
+                        <p>Signed by: Customer</p>
+                        <div class="itemInfo">
+                            <div class="itemImg">
+                                <img src="./assets/img/products/berger-paint.png" alt="">
+                            </div>
+                            <div class="itemDesc">
+                                <h4>Berger Paint</h4>
+                                <p>Sold by: <span>Berger Paints</span></p>
+                                <span class="itemPrice">₹200</span>
+                                <button class="buy_again" onclick="window.location.href='./products.html'">Buy it
+                                    again</button>
+                            </div>
+                        </div>
+                        <div class="btn_group">
+                            <button class="buy_again">Return or replace items</button>
+                            <button class="gift_btn">Share gift receipt</button>
+                            <button class="gift_btn">Leave seller feedback</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="buy_again" class="orderCardWrap tab-content1">
+                <div class="again">
+                    <!-- <h2>Frequently repurchased in Health & Personal Care</h2> -->
+                    <ul>
+                        <li>
+                            <img src="./assets/img/products/berger-paint.png" alt="">
+                            <h4>Berger Paint</h4>
+                            <span>₹200</span>
+                            <button class="buy_again">Add to Cart</button>
+                        </li>
+                        <li>
+                            <img src="./assets/img/products/berger-paint.png" alt="">
+                            <h4>Berger Paint</h4>
+                            <span>₹200</span>
+                            <button class="buy_again">Add to Cart</button>
+                        </li>
+                        <li>
+                            <img src="./assets/img/products/berger-paint.png" alt="">
+                            <h4>Berger Paint</h4>
+                            <span>₹200</span>
+                            <button class="buy_again">Add to Cart</button>
+                        </li>
+                        <li>
+                            <img src="./assets/img/products/berger-paint.png" alt="">
+                            <h4>Berger Paint</h4>
+                            <span>₹200</span>
+                            <button class="buy_again">Add to Cart</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="open_orders" class="orderCardWrap tab-content1">
+                Lorem1
+            </div>
+            <div id="cancelled_orders" class="orderCardWrap tab-content1">
+                <div class="orderCard">
+                    <div class="orderHead">
+                        <ul class="orderLeft">
+                            <li>
+                                <p>ORDER PLACED <span>04-01-2024</span></p>
+                            </li>
+                            <li>
+                                <p>TOTAL <span>₹200</span></p>
+                            </li>
+                            <li>
+                                <p>SHIP TO <span class="customerName">Customer Name</span>
+                                    <span class="cstmrInfo">
+                                        <strong>Customer Name</strong> Lorem Ipsum is simply dummy text
+                                    </span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="invoiceDetails">
+                            <p>ORDER # 171-8448362-6456308</p>
+                        </div>
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Delivered 04-Jan-2024</h3>
+                        <p>Package was handed to a receptionist</p>
+                        <div class="itemInfo">
+                            <div class="itemImg">
+                                <img src="./assets/img/products/berger-paint.png" alt="">
+                            </div>
+                            <div class="itemDesc">
+                                <h4>Berger Paint</h4>
+                                <p>Sold by: <span>Berger Paint</span></p>
+                                <span class="itemPrice">₹0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./assets/js/orderList.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+
+</html>

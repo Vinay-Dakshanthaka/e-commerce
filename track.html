@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/orderdetails.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <title>Order Details</title>
+
+</head>
+
+<body>
+
+    <section class="navigation" style="margin-top: -3rem;">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signUp.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                        </ul>
+                    <li id="avatar-link">
+                        <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="30px" height="30px"
+                                    id="avatar"
+                                    style="display: inline; padding: 3px; padding-bottom: none;">Name</span></a>
+                    </li>
+                    <li>
+                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+            </nav>
+        </div>
+    </section>
+
+    <section class="my-5" style="padding-top: 7rem;">
+        <div class="container">
+            <div class="main-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin"
+                                        class="rounded-circle p-1 bg-warning" width="110">
+                                    <div class="mt-3">
+                                        <h4>User Name</h4>
+                                        <p class="text-secondary mb-1"></p>
+                                        <p class="text-muted font-size-sm"></p>
+                                    </div>
+                                </div>
+                                <!-- <div class="list-group list-group-flush text-center mt-4">
+                                    <a href="#" class="list-group-item list-group-item-action border-0 active">
+                                        Profile Informaton
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0">Orders</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0">Address Book</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0">Settings</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0">Logout</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <div class="card-body p-0 table-responsive">
+                                <h4 class="p-3 mb-0">Product Description</h4>
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Description</th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <th>
+                                                <img src="./assets/img/products/berger-paint.png" alt="product" class=""
+                                                    width="80">
+                                            </th>
+                                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem,
+                                                facilis.</td>
+                                            <td>₹100 X 2</td>
+                                            <td><strong>₹200</strong></td>
+                                            <td><span class="badge badge-warning">PENDING</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">
+                                                <span>Status:</span>
+                                                <span class="badge badge-success">PAID</span>
+                                            </th>
+                                            <td>
+                                                <span class="text-muted">Total Price</span>
+                                                <strong>₹100</strong>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted">Total Paid</span>
+                                                <strong>₹100</strong>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted">Due</span>
+                                                <strong>₹100</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <h4>Timeline</h4>
+                                <ul class="timeline">
+                                    <li class="active">
+                                        <h6>PICKED</h6>
+                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Quisque Lorem ipsum dolor</p>
+                                        <o class="text-muted">04 Jan, 2024</p>
+                                    </li>
+                                    <li>
+                                        <h6>PICKED</h6>
+                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Quisque</p>
+                                        <o class="text-muted">04 Jan, 2024</p>
+                                    </li>
+                                    <li>
+                                        <h6>PICKED</h6>
+                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Quisque</p>
+                                        <o class="text-muted">04 Jan, 2024</p>
+                                    </li>
+                                    <li>
+                                        <h6>PICKED</h6>
+                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Quisque</p>
+                                        <o class="text-muted">04 Jan, 2024</p>
+                                    </li>
+                                    <li>
+                                        <h6>PICKED</h6>
+                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Quisque</p>
+                                        <o class="text-muted">04 Jan, 2024</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+
+</html>

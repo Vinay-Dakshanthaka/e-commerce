@@ -1,0 +1,105 @@
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #040481de;
+    /* color: #fff; */
+    /* background-color: yellow; */
+    color: lightgrey;
+    padding: 4% 270px;
+    font-family: 'gilroy', sans-serif;
+    border-bottom: 2px solid lightgrey;
+    box-shadow: 0px -10px 8px rgb(0,0,0,0.2);
+    margin-top: 2rem;
+  }
+  
+  #footer .foot2,
+  .foot3,
+  .foot4,
+  p a {
+    text-decoration: none;
+    /* color: #000; */
+    color: lightgrey;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 2px;
+    /* Adjusted padding here */
+    letter-spacing: .7px;
+  }
+  
+  #footer .foot2 p a:hover {
+    color: skyblue;
+  }
+  
+  #footer .foot3 p a:hover {
+    color: skyblue;
+  }
+  
+  #footer .foot4 p a:hover {
+    color: skyblue;
+  }
+  
+  #btmfoot p {
+    text-align: center;
+    background-color: #040481de;
+    /* background: linear-gradient(45deg, #0b0b51de, gray);  */
+    color: rgb(237, 234, 234);
+    padding: 25px 2px;
+    /* letter-spacing: .7px; */
+    font-size: 13px;
+    font-family: 'gilroy', sans-serif;
+  }
+  
+  
+  
+  #footer .foot2,
+  .foot3,
+  .foot4,
+  p {
+    /* padding: 15px 1px; */
+    padding: 7px 2px;
+  }
+  
+  
+  #footer .foot1 h3 {
+    padding-top: 7px;
+  
+  }
+  
+  #footer .foot1 .icons {
+    padding: 22px 0px;
+  }
+  
+  #footer .foot1 .icons i {
+    font-size: 21px;
+    padding: 2px 7px;
+  }
+  
+  #footer .foot1 .icons i:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Media query  */
+  @media only screen and (max-width: 768px) {
+    #footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 5% 20px;
+    }
+  
+    #footer .foot1,
+    #footer .foot2,
+    #footer .foot3,
+    #footer .foot4 {
+      margin-bottom: 30px;
+    }
+  
+    #footer .foot1 .icons {
+      padding: 10px 0;
+      margin-top: 5px;
+    }
+  
+    #footer .foot1 h3 {
+      padding-top: 0;
+    }
+  }

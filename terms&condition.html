@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .terms-container{
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 5rem;
+        }
+
+        header {
+            background-color: #007bff6d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .left-section, .right-section {
+            box-sizing: border-box;
+            width: 48%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .left-section h2,
+        .right-section h2 {
+            color: black;
+        }
+
+        .read-more {
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .collapse-content {
+            display: none;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #007bff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .left-section, .right-section {
+                width: 100%;
+            }
+
+            .main-content {
+                flex-direction: column; /* Updated line for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signup.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                        </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <div class="terms-container">
+        <div class="loader" id="loader"></div>
+
+    <header>
+        <h1> <span style="color: green;">Terms</span> & <span style="color: black;">Conditions</span></h1>
+        <p><span style="color: black;">Browse the collection of top Products</span></p>
+    </header>
+
+    <div class="main-content">
+        <section class="left-section" id="contentSection" style="display: none;">
+            <h2>Welcome to Paintings Store</h2>
+            <p>where art comes to life in vibrant colors and captivating strokes. Immerse yourself in a world of creativity and expression as we curate a collection of exquisite paintings that transcend the ordinary. Each piece tells a unique story, evoking emotions and sparking inspiration. <br> <br> Whether you're an art enthusiast or a casual admirer, our store invites you to explore the boundless beauty of visual storytelling. Discover the perfect masterpiece that resonates with your style and adds a touch of artistic elegance to your space. Join us on a journey where every brushstroke is a testament to the passion and skill of the talented artists we proudly showcase. Welcome to a haven for art lovers and seekers of aesthetic marvels – welcome to the Paintings Store.</p>
+
+            <h2>Paints Official Website</h2>
+            <p> 
+                Certainly! Here's a brief introduction about the content for the "Paints Official Website" section:
+                
+                Paints Official Website
+                Welcome to the official website of Paints, your ultimate destination for exploring the world of art and creativity. Immerse yourself in a vibrant digital space where art comes to life, and discover a rich collection of paintings that captivate the senses.<br> <br>  Join us on a journey where every click opens a door to a world of artistic wonder. Discover the passion, skill, and vision embedded in each painting featured on the Paints Official Website. We invite you to explore, appreciate, and connect with the art that speaks to your soul. <br><br>
+
+                Dive into the boundless realm of creativity – welcome to Paints, where art meets the digital canvas.</p>
+
+            <h2>How It Works?</h2>
+            <p class="collapse-content">Discovering the inner workings of our platform is essential to ensuring a seamless experience. We've designed a straightforward process to enhance your interaction with Paintings Store. Here's a brief overview of how our platform functions:</p>
+
+            <ol>
+                <li><strong>Explore the Collections:</strong> Begin your journey by exploring our diverse collection of captivating paintings. From classic masterpieces to contemporary artwork, we curate a range of styles to suit every taste.</li>
+                
+                <li><strong>Detailed Product Pages:</strong> Click on a painting to access its detailed product page. Here, you'll find comprehensive information, including the artist's background, dimensions, and materials used.</li>
+                
+                <li><strong>Secure Checkout:</strong> When you've found the perfect piece, proceed to our secure checkout. We prioritize the safety of your personal information, ensuring a smooth and protected transaction process.</li>
+                
+                <li><strong>Order Confirmation:</strong> Once your order is confirmed, you'll receive an email with the details of your purchase. Keep an eye on your inbox for updates on shipping and delivery.</li>
+                
+                <!-- Add more steps or information as necessary -->
+            </ol>
+        </section>
+
+        <section class="right-section">
+            <h2>Acceptance of Terms in the Form of Paintings</h2>
+            <p>
+                <span style="color: black; font-size: 20px; font-weight: 800;">1. Introduction:</span><br>
+                In the realm of legal agreements and terms, the concept of acceptance is often presented through written documents. However, envision a unique approach where the acceptance of terms is beautifully portrayed in the form of paintings. This creative endeavor not only adds an artistic touch but also aims to engage users in a visually captivating manner. <br> <br>
+
+                <span style="color: black; font-size: 20px; font-weight: 800;">2. Visual Representation:</span><br>
+                Imagine a gallery of paintings, each canvas depicting a specific clause or condition. The strokes of the artist's brush convey the essence of the terms, making the acceptance process more intuitive. Users can explore the gallery, appreciating the blend of legal language and artistic expression. <br> <br>
+
+               <span style="color: black; font-size: 20px; font-weight: 800;"> 3. Symbolic Imagery:</span><br>
+                Every painting within this gallery holds symbolic imagery related to the terms and conditions. Metaphors, colors, and visual elements intertwine to communicate the legal aspects effectively. Users can decipher the meaning behind each piece, fostering a deeper understanding of their commitment. <br><br>
+
+                <span style="color: black; font-size: 20px; font-weight: 800;">4. Interactive Experience:</span><br>
+                To enhance user engagement, the gallery provides an interactive experience. Users can click on each painting to reveal detailed explanations of the associated terms. This dynamic interaction transforms the acceptance process into an educational and visually appealing journey. <br><br>
+
+               <span style="color: black; font-size: 20px; font-weight: 800;"> 5. Embracing Creativity and Legality:</span><br>
+                The fusion of creativity and legality aims to redefine how users perceive and acknowledge terms and conditions. By incorporating paintings, the traditional monotony of legal documents gives way to an innovative and memorable experience, where acceptance becomes an artful acknowledgment. <br><br>
+
+                <span style="color: black; font-size: 20px; font-weight: 800;">6. Navigating the Gallery:</span><br>
+                Users can navigate through the gallery seamlessly, transitioning from one painting to another. Each artwork contributes to the comprehensive understanding of the terms, creating a narrative that unfolds visually and intellectually. <br><br>
+
+                <span style="color: black; font-size: 20px; font-weight: 800;">7. Aesthetic Harmony:</span><br>
+                The aesthetic harmony of the paintings not only serves a decorative purpose but also imparts a sense of cohesiveness to the terms and conditions. The visual appeal enhances the overall user experience and encourages a positive attitude toward compliance. <br><br>
+
+                <span style="color: black; font-size: 20px; font-weight: 800;">8. Significance of Acceptance:</span><br>
+                Through this artistic approach, the significance of acceptance is emphasized. Users acknowledge the terms not merely as contractual obligations but as an appreciation of the blend of creativity and legal formalities. <br><br>
+
+                <span style="color: black; font-size: 20px; font-weight: 800;">  9. Conclusion</span>:<br>
+                Acceptance of terms in the form of paintings is an innovative step towards making legal agreements more accessible and engaging. This artistic interpretation invites users to explore, understand, and accept terms with a newfound appreciation for the intersection of creativity and legality.
+            </p>
+        </section>
+    </div>
+
+    </div>
+
+    <section>
+        <div id="footer">
+            <!-- foot 1 -->
+            <div class="foot1" data-aos="fade-right" data-aos-delay="150">
+
+                <a href="#" class="brand text-center"><img src="./assets/img/logo.png" alt="" width="80px"
+                        height="80px"></a>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+
+            </div>
+
+            <!-- foot2 -->
+            <div class="foot2" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Company</b></h3>
+                <br>
+
+                <p><a href="">About Us</a></p>
+                <p><a href="">Contact Us</a></p>
+                <p><a href="">Terms & Conditions</a></p>
+            </div>
+
+            <!-- foot3 -->
+            <div class="foot3" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Acount</b></h3>
+                <br>
+                <p><a href="">Register</a></p>
+                <p><a href="">Return Policy</a></p>
+                <p><a href="">Become a member</a></p>
+            </div>
+
+            <!-- foot 4 -->
+            <div class="foot4" data-aos="fade-left" data-aos-delay="150">
+                <h3 style="font-size: 21px;letter-spacing: .8px;"><b>Contact</b></h3>
+                <br>
+                <p><a href="">Account</a></p>
+                <p><a href=>Get help</a></p>
+            </div>
+        </div>
+
+        <div id="btmfoot">
+            <p>copyright @paintplus all right reserved powered by paint plus</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            showLoader(); // Display loader on page load
+
+            // Simulate content loading delay
+            setTimeout(function () {
+                hideLoader(); // Hide loader after content is loaded
+                document.getElementById("contentSection").style.display = "block";
+            }, 1000); // Change 2000 to your desired loading time in milliseconds
+        });
+
+        function showLoader() {
+            document.getElementById("loader").style.display = "block";
+        }
+
+        function hideLoader() {
+            document.getElementById("loader").style.display = "none";
+        }
+
+        function toggleReadMore() {
+            const collapseContent = document.querySelector('.collapse-content');
+            collapseContent.style.display = (collapseContent.style.display === 'none' || collapseContent.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+
+</body>
+</html>

@@ -17,76 +17,7 @@
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <style>
-        .dropdown{
-	display: inline-block;
-	margin: 10px;
-    margin-left: 0;
-}
-.parent{
-	display: block;
-}
-.parent > a{
-	display: block;
-	box-sizing: border-box;
-	/* padding: 7px 30px; */
-}
-.childs{
-	background-color: #242491;
-    padding: 10px;
-    padding-top: 20px;
-}
-.childs li{
-	display: block;
-    z-index: 1000;
-    border: none;
-}   
-.childs li a{
-	display: block;
-	box-sizing: border-box;
-	padding: 7px 30px;
-    z-index: 1000;
-    color: white;
-}   
-.dropdown{
-    padding: 0;
-}
-.dropdown-6 .parent{
-	position: relative;
-	overflow: hidden;
-    z-index: 1000;
-    padding-left: 0;
-}
-.dropdown-6 .childs{
-	position: absolute;
-	width: 200px;
-	z-index: 1;
-	top: 100%;
-	right: 200px; /*just changed*/
-	transition: 0.4s;
-    /* margin-left: 0; */
-
-}
-.dropdown-6 .parent:hover{
-	overflow: visible;
-    z-index: 1000;
-}
-.dropdown-6 .parent:hover  .childs{
-	right: -90px; /*just changed*/
-	transform: rotate(360deg); /*just changed*/
-    z-index: 1000;
-}
-@media only screen and (max-width: 767px) {
-    .dropdown-6 .parent:hover  .childs{
-	right: 0px; /*just changed*/
-	transform: rotate(360deg); /*just changed*/
-    z-index: 1000;
-}   
-
-}
-
-
-    </style>
+    <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 
 <body>
@@ -97,40 +28,64 @@
         <div class="scroll-bar"></div>
     </div>
     <!-- Header Section -->
-    <header class="header" id="header">
-        <nav class="navbar container">
-            <a href="#" class="brand"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
-            <div class="burger" id="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
             </div>
-            <div class="menu" id="menu">
-                <ul class="menu-inner">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Products</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contact Us</a></li>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
                     </li>
-              </ul>
-          </div>
-                </ul>
-            </div>
-            <a href="#" class="menu-link" style="margin-left: 0px;">Login</a>
-            <ul class="dropdown dropdown-6">
-                <li class="parent">
-                    <a href="#" class="menu-link">Others</a> 
-                    <ul class="childs">
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Track Order</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signUp.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                        </ul>
+                        <li id="avatar-link">
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="30px" height="30px" id="avatar" style="display: inline; padding: 3px; padding-bottom: none;">Name</span></a>
+                        </li>
+                        <li>
+                            <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                          </li>
+            </nav>
+        </div>
+    </section>
+
     <!-- Main Section -->
     <main class="main">
         <section class="section banner banner-section">
@@ -144,7 +99,7 @@
                         essentials.
                     </p>
                     <button class="btn btn-darken btn-inline" id="hero-shopnow">
-                        <a href="#">Shop Now</a><i class="bx bx-right-arrow-alt"></i>
+                        <a href="./products.html">Shop Now</a><i class="bx bx-right-arrow-alt"></i>
                     </button>
                 </div>
                 <div class="banner-links">
@@ -284,7 +239,7 @@
 
         <!-- Video Section Starts here -->
         <section id="video-section">
-            <h2 class="text-center mb-4 display-2 text-white">Wall Paints For Decoration</h2>
+            <h2 class="text-center mb-4 display-2 fw-bold text-white">Wall Paints For Decoration</h2>
 
             <div class="row">
                 <!-- First Video -->
@@ -313,8 +268,11 @@
             <!-- Additional Heading and Paragraph -->
             <div class="text-center mt-4 text-white">
                 <h3>Why Care is Important</h3>
-                <p> Well-maintained wall paint contributes to the overall aesthetic appeal of a room or space. Faded, chipped, or peeling paint can make a space look unkempt and unattractive.</p>
-                <p>Paint acts as a protective layer for walls, shielding them from various elements such as moisture, dirt, and sunlight. Regular care helps maintain this protective barrier, preventing damage to the underlying wall surfaces.</p>
+                <p> Well-maintained wall paint contributes to the overall aesthetic appeal of a room or space. Faded,
+                    chipped, or peeling paint can make a space look unkempt and unattractive.</p>
+                <p>Paint acts as a protective layer for walls, shielding them from various elements such as moisture,
+                    dirt, and sunlight. Regular care helps maintain this protective barrier, preventing damage to the
+                    underlying wall surfaces.</p>
             </div>
         </section>
         <!-- Video Section Ends here -->
@@ -381,6 +339,7 @@
         </section>
     </main>
 
+    <!-- footer Section  -->
     <section>
         <div id="footer">
             <!-- foot 1 -->
