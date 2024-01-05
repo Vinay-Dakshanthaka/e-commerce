@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="./assets/css/cart.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/fonts-styles.css">
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -29,8 +27,8 @@
                     <li>
                         <a href="products.html">Products</a>
                     </li>
-                    <li>
-                        <a href="#">Sign Up</a>
+                    <!-- <li>
+                        <a href="#">Sign Up/Login</a>
                         <ul class="nav-dropdown">
                             <li>
                                 <a href="./signUp.html">Sign Up</a>
@@ -39,7 +37,7 @@
                                 <a href="./login.html">Login</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#">Others</a>
                         <ul class="nav-dropdown">
@@ -47,7 +45,7 @@
                                 <a href="./aboutus.html">About Us</a>
                             </li>
                             <li>
-                                <a href="./contact.html">Contatct Us</a>
+                                <a href="./contact.html">Contact Us</a>
                             </li>
                             <li>
                                 <a href="./cart.html">Cart</a>
@@ -69,12 +67,18 @@
                                     <a href="./userProfile.html">Profile</a>
                                 </li>
                                 <li>
+                                    <a href="./orderList.html">My Orders</a>
+                                </li>
+                                <li>
+                                    <a href="./addresses.html">Addresses</a>
+                                </li>
+                                <li>
                                     <a href="#">Logout</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count" style="margin-top: -2.3rem;">1</sup></a>
+                            <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count" >1</sup></a>
                         </li>
             </nav>
         </div>
@@ -105,7 +109,7 @@
                             <button id="decrement">-</button>
                             <button id="quantity">0</button>
                             <button id="increment">+</button>
-                            <h4 id="price">x 20</h4>
+                            <!-- <h4 id="price">x 20</h4> -->
                         </div>
 
 
@@ -113,7 +117,7 @@
                             <p id="prodTotal">₹15.00</p>
                         </div>
                         <div class="cartSection removeWrap">
-                            <a href="#" class="remove">x</a>
+                            <a href="#" class="remove"><box-icon name='trash'></box-icon></a>
                         </div>
                     </div>
                 </li>

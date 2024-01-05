@@ -51,7 +51,7 @@ body {
   margin: 0 0.938rem;
   padding: 0 0.938rem;
   position: relative;
-  top: 20%;
+  top: 10%;
 }
 
 .frm-wrapper {
@@ -91,7 +91,7 @@ input {
   outline: none;
 }
 
-input[type="text"],input[type="email"] {
+input[type="text"],input[type="email"],input[type="password"] {
   border: 0.063rem solid #3e4155;
   border-radius: 3.125rem;
   padding: 0.625rem 0.938rem;

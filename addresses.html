@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add New Address</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="./assets/css/navbar.css">
+          <link rel="stylesheet" href="./assets/css/footer.css">
+          <link rel="stylesheet" href="./assets/css/fonts-styles.css">
+    <style>
+        /* Custom CSS for the page */
+        body {
+            background-color: #20209ade;
+            color: white;
+        }
+
+        .custom-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 60%; 
+            margin: auto; /* Center the form */
+        }
+
+        .custom-form label {
+            color: #333;
+        }
+
+        .custom-form button {
+            width: 48%; 
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Sign Up/Login</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signUp.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                        </ul>
+                        <li id="avatar-link">
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar" style="display: inline; margin-bottom: 5px;">Name</span></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./userProfile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="./orderList.html">My Orders</a>
+                                </li>
+                                <li>
+                                    <a href="./addresses.html">Addresses</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
+                            
+                        </li>
+            </nav>
+        </div>
+    </section> 
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Add New Address</h2>
+
+    <!-- Use My Current Location Button -->
+    <button class="btn btn-primary mb-4 text-center">Use My Current Location</button>
+
+    <!-- Address Form -->
+    <form class="custom-form">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- First Column -->
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="text" class="form-control" id="mobileNumber" placeholder="Enter Mobile Number">
+                </div>
+                <div class="form-group">
+                    <label for="houseNumber">House number/building name</label>
+                    <input type="text" class="form-control" id="houseNumber" placeholder="Enter House number/building name">
+                </div>
+                <div class="form-group">
+                    <label for="roadName">Road name/area</label>
+                    <input type="text" class="form-control" id="roadName" placeholder="Enter Road name/area">
+                </div>
+                <div class="form-group">
+                    <label for="pinCode">Pin code</label>
+                    <input type="text" class="form-control" id="pinCode" placeholder="Enter Pin code">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Second Column -->
+               
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter City">
+                </div>
+                <div class="form-group">
+                    <label for="regionState">Region State</label>
+                    <input type="text" class="form-control" id="regionState" placeholder="Enter Region State">
+                </div>
+                <div class="form-group">
+                    <label for="addressType">Address Type</label>
+                    <input type="text" class="form-control" id="addressType" placeholder="Enter Address Type">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add New Address and Show Saved Address Buttons -->
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-success">Add New Address</button>
+            <button type="button" class="btn btn-info"><a href="./savedAddresses.html">Show Saved Address</a></button>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="/assets/js/app.js"></script>
+        <script src="./assets/js/navbar.js"></script>
+
+</body>
+</html>

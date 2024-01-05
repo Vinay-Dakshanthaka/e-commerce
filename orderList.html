@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/css/orderList.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/fonts-styles.css">
@@ -32,8 +33,8 @@
                     <li>
                         <a href="products.html">Products</a>
                     </li>
-                    <li>
-                        <a href="#">Sign Up</a>
+                    <!-- <li>
+                        <a href="#">Sign Up/Login</a>
                         <ul class="nav-dropdown">
                             <li>
                                 <a href="./signUp.html">Sign Up</a>
@@ -42,7 +43,7 @@
                                 <a href="./login.html">Login</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#">Others</a>
                         <ul class="nav-dropdown">
@@ -50,7 +51,7 @@
                                 <a href="./aboutus.html">About Us</a>
                             </li>
                             <li>
-                                <a href="./contact.html">Contatct Us</a>
+                                <a href="./contact.html">Contact Us</a>
                             </li>
                             <li>
                                 <a href="./cart.html">Cart</a>
@@ -72,12 +73,18 @@
                                     <a href="./userProfile.html">Profile</a>
                                 </li>
                                 <li>
+                                    <a href="./orderList.html">My Orders</a>
+                                </li>
+                                <li>
+                                    <a href="./addresses.html">Addresses</a>
+                                </li>
+                                <li>
                                     <a href="#">Logout</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
+                            <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count" >1</sup></a>
                         </li>
             </nav>
         </div>
@@ -87,10 +94,9 @@
             <div class="orderTop">
                 <h2 class="hidden-xs">My Orders</h2>
                 <div class="search-container">
-                    <form action="/action_page.php">
+                    <!-- <form action="/action_page.php">
                         <input type="text" placeholder="Search all orders" name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
             <div class="order_tab">
@@ -199,7 +205,7 @@
                 </div>
             </div>
             <div id="open_orders" class="orderCardWrap tab-content1">
-                Lorem1
+              
             </div>
             <div id="cancelled_orders" class="orderCardWrap tab-content1">
                 <div class="orderCard">
