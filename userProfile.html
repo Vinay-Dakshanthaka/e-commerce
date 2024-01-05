@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <style>
         body {
+            font-family: 'gilroy', sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -318,9 +319,6 @@
                                 <a href="./aboutus.html">About Us</a>
                             </li>
                             <li>
-                                <a href="./productupload.html">Add Products</a>
-                            </li>
-                            <li>
                                 <a href="./contact.html">Contatct Us</a>
                             </li>
                             <li>
@@ -338,6 +336,14 @@
                         </ul>
                         <li id="avatar-link">
                             <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar" style="display: inline; margin-bottom: 5px;">Name</span></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./userProfile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
@@ -350,8 +356,7 @@
     <section class="gi-register padding-tb" id="admin-details-form">
         <div class="container-xl px-4 mt-4 admin-profile">
             <div class="section-title-2">
-                <h2 class="gi-title text-center font-" style="font-weight: 500;">Admin Profile<span></span></h2>
-                <p class="text-center fw-bold">Best place to buy and sell digital products.</p>
+                <h2 class="gi-title text-center font-" style="font-weight: 500;">User Profile<span></span></h2>
             </div>
             <!-- Account page navigation-->
             <hr class="mt-0 mb-4">
@@ -538,7 +543,7 @@
         </div>
     </div>
 
-    <!-- Admin page End  -->
+    <!-- User page End  -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./assets/js/navbar.js"></script>
 </body>

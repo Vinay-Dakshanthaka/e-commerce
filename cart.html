@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/css/cart.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/fonts-styles.css">
+
+
+
 </head>
+
 <body>
     <section class="navigation">
         <div class="nav-container">
@@ -26,7 +33,7 @@
                         <a href="#">Sign Up</a>
                         <ul class="nav-dropdown">
                             <li>
-                                <a href="./signup.html">Sign Up</a>
+                                <a href="./signUp.html">Sign Up</a>
                             </li>
                             <li>
                                 <a href="./login.html">Login</a>
@@ -56,135 +63,83 @@
                             </li>
                         </ul>
                         <li id="avatar-link">
-                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="30px" height="30px" id="avatar" style="display: inline; padding: 3px; padding-bottom: none;">Name</span></a>
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar" style="display: inline; margin-bottom: -5px;">Name</span></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./userProfile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count" style="margin-top: -2.3rem;">1</sup></a>
                         </li>
             </nav>
         </div>
     </section>
     <div class="wrap cf">
         <div class="heading cf">
-          <h1>My Cart</h1>
-          <a href="./products.html" class="continue">Continue Shopping</a>
+            <h1>My Cart</h1>
+            <a href="./products.html" class="continue">Continue Shopping</a>
         </div>
         <div class="cart">
-      <!--    <ul class="tableHead">
+            <!--    <ul class="tableHead">
             <li class="prodHeader">Product</li>
             <li>Quantity</li>
             <li>Total</li>
              <li>Remove</li>
           </ul>-->
-          <ul class="cartWrap">
-            <li class="items odd">
-              
-          <div class="infoWrap"> 
-              <div class="cartSection">
-              <img src="./assets/img/products/berger-paint.png" alt="" class="itemImg" />
-                <p class="itemNumber">#QUE-007544-002</p>
-                <h3>Item Name 1</h3>
-              
-                 <p> <input type="text"  class="qty" placeholder="3"/> x ₹5.00</p>
-              
-              </div>  
-          
-              
-              <div class="prodTotal cartSection">
-                <p>₹15.00</p>
-              </div>
-                    <div class="cartSection removeWrap">
-                 <a href="#" class="remove">x</a>
-              </div>
-            </div>
-            </li>
-            <li class="items even">
-              
-             <div class="infoWrap"> 
-              <div class="cartSection">
-               
-              <img src="./assets/img/products/berger-paint.png" alt="" class="itemImg" />
-                <p class="itemNumber">#QUE-007544-002</p>
-                <h3>Item Name 1</h3>
-              
-                 <p> <input type="text"  class="qty" placeholder="3"/> x ₹5.00</p>
-              
-              </div>  
-          
-              
-              <div class="prodTotal cartSection">
-                <p>₹15.00</p>
-              </div>
-                    <div class="cartSection removeWrap">
-                 <a href="#" class="remove">x</a>
-              </div>
-            </div>
-            </li>
-            
-                  <li class="items odd">
-                   <div class="infoWrap"> 
-              <div class="cartSection">
-                  
-              <img src="./assets/img/products/berger-paint.png" alt="" class="itemImg" />
-                <p class="itemNumber">#QUE-007544-002</p>
-                <h3>Item Name 1</h3>
-              
-                 <p> <input type="text"  class="qty" placeholder="3"/> x ₹5.00</p>
-              
-              </div>  
-          
-              
-              <div class="prodTotal cartSection">
-                <p>₹15.00</p>
-              </div>
-                          <div class="cartSection removeWrap">
-                 <a href="#" class="remove">x</a>
-              </div>
+            <ul class="cartWrap">
+                
+                <li class="items odd">
+
+                    <div class="infoWrap">
+                        <div class="cartSection">
+                            <img src="./assets/img/products/berger-paint.png" alt="" class="itemImg" />
+                            <p class="itemNumber">#QUE-007544-002</p>
+                            <h3>Item Name 1</h3>
+
+                            <!-- <p id="item-price"><button id="decrement"> &plus; </button> <h4 id="quantity"> 0 </h4>  <button id="increment"> + </button>   x ₹5.00</p> -->
+                            <button id="decrement">-</button>
+                            <button id="quantity">0</button>
+                            <button id="increment">+</button>
+                            <h4 id="price">x 20</h4>
+                        </div>
+
+
+                        <div class="prodTotal cartSection">
+                            <p id="prodTotal">₹15.00</p>
+                        </div>
+                        <div class="cartSection removeWrap">
+                            <a href="#" class="remove">x</a>
+                        </div>
                     </div>
-            </li>
-            <li class="items even">
-             <div class="infoWrap"> 
-              <div class="cartSection info">
-                   
-              <img src="./assets/img/products/berger-paint.png" alt="" class="itemImg" />
-                <p class="itemNumber">#QUE-007544-002</p>
-                <h3>Item Name 1</h3>
-              
-                <p> <input type="text"  class="qty" placeholder="3"/> x ₹5.00</p>
-              
-              </div>  
-          
-              
-              <div class="prodTotal cartSection">
-                <p>₹15.00</p>
-              </div>
-          
-                  <div class="cartSection removeWrap">
-                 <a href="#" class="remove">x</a>
-              </div>
-               </div>
-            </li>
-            
-            
-            <!--<li class="items even">Item 2</li>-->
-       
-          </ul>
+                </li>
+               
+      
+            </ul>
         </div>
-        
-        
-        
+
+
+
         <div class="subtotal cf">
-          <ul>
-            <li class="totalRow"><span class="label">Subtotal</span><span class="value">₹35.00</span></li>
-            
+            <ul>
+                <li class="totalRow"><span class="label">Subtotal</span><span class="value">₹35.00</span></li>
+
                 <li class="totalRow"><span class="label">Shipping</span><span class="value">₹5.00</span></li>
-            
-                  <li class="totalRow"><span class="label">Tax</span><span class="value">₹4.00</span></li>
-                  <li class="totalRow final"><span class="label">Total</span><span class="value">₹44.00</span></li>
-            <li class="totalRow"><a href="./checkout.html" class="btn continue">Checkout</a></li>
-          </ul>
+
+                <li class="totalRow"><span class="label">Tax</span><span class="value">₹4.00</span></li>
+                <li class="totalRow final"><span class="label">Total</span><span class="value">₹44.00</span></li>
+                <li class="totalRow"><a href="./checkout.html" class="btn continue">Checkout</a></li>
+            </ul>
         </div>
-      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/cart.js"></script>
 </body>
+
 </html>

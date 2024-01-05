@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap Table</title>
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <style>
+    a{
+        color: white;
+    }
+    a:hover{
+        color: white;
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./signUp.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contatct Us</a>
+                            </li>
+                            <li>
+                                <a href="./cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="track.html">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
+                            </li>
+                        </ul>
+                        <li id="avatar-link">
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar" style="display: inline; margin-bottom: 5px;">Name</span></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./adminprofile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
+                        </li>
+            </nav>
+        </div>
+    </section>
+
+<div class="container mt-5">
+    <h1 class="text-center">Customer List</h1>
+    <div class="container mt-5">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Role</th>
+              <th scope="col">View Orders</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>johndoe@example.com</td>
+              <td>12345 12345</td>
+              <td>Developer</td>
+              <td><button class="btn btn-success text-white"><a href="./orderList.html">View Order</a></button></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>johndoe@example.com</td>
+                <td>12345 12345</td>
+                <td>Developer</td>
+                <td><button class="btn btn-success text-white"><a href="./orderList.html">View Order</a></button></td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>johndoe@example.com</td>
+                <td>12345 12345</td>
+                <td>Developer</td>
+                <td><button class="btn btn-success text-white"><a href="./orderList.html">View Order</a></button></td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>johndoe@example.com</td>
+                <td>12345 12345</td>
+                <td>Developer</td>
+                <td><button class="btn btn-success text-white"><a href="./orderList.html">View Order</a></button></td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>johndoe@example.com</td>
+                <td>12345 12345</td>
+                <td>Developer</td>
+                <td><button class="btn btn-success text-white"><a href="./orderList.html">View Order</a></button></td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./assets/js/navbar.js"></script>
+</body>
+</html>

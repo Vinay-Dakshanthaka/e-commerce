@@ -2,12 +2,17 @@
 <html lang="en-US">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/orderList.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/fonts-styles.css">
+
 </head>
 
 <body>
@@ -31,7 +36,7 @@
                         <a href="#">Sign Up</a>
                         <ul class="nav-dropdown">
                             <li>
-                                <a href="./signup.html">Sign Up</a>
+                                <a href="./signUp.html">Sign Up</a>
                             </li>
                             <li>
                                 <a href="./login.html">Login</a>
@@ -61,7 +66,18 @@
                             </li>
                         </ul>
                         <li id="avatar-link">
-                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="30px" height="30px" id="avatar" style="display: inline; padding: 3px; padding-bottom: none;">Name</span></a>
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar" style="display: inline; margin-bottom: 5px;">Name</span></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./userProfile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
                         </li>
             </nav>
         </div>

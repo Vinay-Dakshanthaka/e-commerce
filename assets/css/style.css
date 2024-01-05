@@ -907,7 +907,7 @@ a {
 #continuous-slide-section {
   padding: 0;
   background-color: #3498db;
-
+  height: 100%;
 }
 
 .continuous-slide-container {
@@ -918,20 +918,17 @@ a {
 .continuous-slide-images {
   display: flex;
   animation: slideAnimation 10s linear infinite;
-  /* Adjust the duration as needed */
 }
 
 .logo {
   width: 100px;
-  /* Set the width of each logo/image */
   height: auto;
   object-fit: contain;
   margin-right: 20px;
-  /* Adjust spacing between images */
 }
 
 #logo-slider {
-  margin-top: -40px;
+  margin-top: -80px;
 }
 
 @keyframes slideAnimation {

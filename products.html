@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/product.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="./assets/css/footer.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/fonts-styles.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
   <style>
     body {
       margin: 0;
@@ -135,7 +139,7 @@
       padding: 0;
     }
 
-  
+
 
     /*ayemin*/
   </style>
@@ -162,13 +166,13 @@
             <a href="#">Sign Up</a>
             <ul class="nav-dropdown">
               <li>
-                <a href="./signup.html">Sign Up</a>
+                <a href="./signUp.html">Sign Up</a>
               </li>
               <li>
                 <a href="./login.html">Login</a>
               </li>
             </ul>
-          </li> 
+          </li>
           <li>
             <a href="#">Others</a>
             <ul class="nav-dropdown">
@@ -185,15 +189,27 @@
                 <a href="./faq.html">FAQ</a>
               </li>
               <li>
-                <a href="./track.html">Track Order</a>
+                <a href="track.html">Track Order</a>
               </li>
               <li>
                 <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
-            </li>
+              </li>
             </ul>
-            <li>
-              <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </li>
+          <li id="avatar-link">
+            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar"
+                  style="display: inline; margin-bottom: 5px;">Name</span></a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="./userProfile.html">Profile</a>
+              </li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
+          </li>
       </nav>
     </div>
   </section>
@@ -206,9 +222,6 @@
           <div class="col-lg-4 col-md-2 col-sm-6 col-xs-6 nopadding">
             <span class="subtitle">Category</span>
           </div>
-
-
-
           <div class="col-lg-8 col-md-10 col-sm-6 col-xs-12">
             <div class="form-group">
               <select class="form-control" data-val="true" data-val-number="The field CategoryID must be a number."
@@ -273,13 +286,6 @@
       <div class="foot1" data-aos="fade-right" data-aos-delay="150">
 
         <a href="#" class="brand text-center"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
-        <div class="icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-pinterest"></i>
-        </div>
-
       </div>
 
       <!-- foot2 -->
@@ -307,6 +313,10 @@
         <br>
         <p><a href="">Account</a></p>
         <p><a href=>Get help</a></p>
+        <p> <a href="#" title=""><box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon></a>
+          <a href="#" title=""><box-icon name='twitter' type='logo' color='#ffffff'></box-icon></a>
+          <a href="#" title=""><box-icon name='youtube' type='logo' color='#ffffff'></box-icon></a>
+        </p>
       </div>
     </div>
 
@@ -324,23 +334,61 @@
         addDataToHTML();
       })
 
-    function addDataToHTML() {
-      // remove datas default from HTML
-      let listProductHTML = document.querySelector('.listProduct');
+    // function addDataToHTML() {
+    //   // remove datas default from HTML
+    //   let listProductHTML = document.querySelector('.listProduct');
 
-      // add new datas
-      if (products != null) // if has data
-      {
+    //   // add new datas
+    //   if (products != null) // if has data
+    //   {
+    //     products.forEach(product => {
+    //       let newProduct = document.createElement('a');
+    //       newProduct.href = '/product-details.html?id=' + product.id;
+    //       newProduct.classList.add('item');
+    //       newProduct.innerHTML =
+    //         `<img src="${product.image}" alt="">
+    //             <h2>${product.name}</h2>
+    //             <div class="price">₹${product.price}</div>`;
+    //       listProductHTML.appendChild(newProduct);
+
+    //     });
+    //   }
+    // }
+
+    function addDataToHTML() {
+      // remove default data from HTML
+      let listProductHTML = document.querySelector('.listProduct');
+      listProductHTML.innerHTML = ''; // Clear existing content
+
+      // add new data
+      if (products != null) {
         products.forEach(product => {
           let newProduct = document.createElement('a');
           newProduct.href = '/product-details.html?id=' + product.id;
           newProduct.classList.add('item');
           newProduct.innerHTML =
-            `<img src="${product.image}" alt="">
-                <h2>${product.name}</h2>
-                <div class="price">₹${product.price}</div>`;
+            `<div class="image-container">
+          <img src="${product.image}" alt="" class="zoomable-image">
+        </div>
+        <h2>${product.name}</h2>
+        <div class="price">₹${product.price}</div>`;
+
           listProductHTML.appendChild(newProduct);
 
+          // Add zoom effect
+          let zoomableImage = newProduct.querySelector('.zoomable-image');
+          zoomableImage.addEventListener('mousemove', (event) => {
+            let rect = zoomableImage.getBoundingClientRect();
+            let x = (event.clientX - rect.left) / rect.width * 100;
+            let y = (event.clientY - rect.top) / rect.height * 100;
+
+            zoomableImage.style.transformOrigin = `${x}% ${y}%`;
+            zoomableImage.style.transform = 'scale(1.2)';
+          });
+
+          zoomableImage.addEventListener('mouseout', () => {
+            zoomableImage.style.transform = 'scale(1)';
+          });
         });
       }
     }

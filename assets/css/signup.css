@@ -19,6 +19,16 @@ a {
   color: #007ace;
 }
 
+.logo{
+  position: relative;
+}
+#logo{
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  cursor: pointer;
+}
+
 h1,
 p {
   text-align: center;
@@ -26,9 +36,7 @@ p {
 }
 
 body {
-    margin: 0;
-    padding: 0  ;
-  color: #3e4e57;
+  color: #040481de;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -43,7 +51,7 @@ body {
   margin: 0 0.938rem;
   padding: 0 0.938rem;
   position: relative;
-  top: 6%;
+  top: 20%;
 }
 
 .frm-wrapper {
@@ -59,7 +67,7 @@ body {
 
 /* Header */
 .title {
-  color: #25b0d3;
+  color: #040481de;
   font-family: "Paytone One", sans-serif;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
@@ -83,7 +91,7 @@ input {
   outline: none;
 }
 
-input[type="text"],input[type="email"],input[type="tel"] {
+input[type="text"],input[type="email"] {
   border: 0.063rem solid #3e4155;
   border-radius: 3.125rem;
   padding: 0.625rem 0.938rem;
@@ -92,7 +100,7 @@ input[type="text"],input[type="email"],input[type="tel"] {
 }
 
 input[type="submit"] {
-  background-color: #6dcbe2;
+  background-color: #040481de;
   color: #fff;
   border: 0.063rem solid #6dcbe2;
   border-radius: 3.125rem;
@@ -110,9 +118,7 @@ input[type="submit"] {
   font-size: 0.8rem;
   margin: auto 0;
 }
-.btn{
-cursor: pointer;
-}
+
 p.frm-btm-text a {
   font-weight: 600;
   color: #007ace;

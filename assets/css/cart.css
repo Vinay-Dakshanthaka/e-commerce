@@ -368,3 +368,28 @@
 	}
 }
  
+
+
+#increment,#decrement{
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;  
+    border: none;
+    font-size: 2rem ;
+}
+#quantity{
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
+#item-price{
+    font-size: 1.5rem;
+}
+
+#price{
+    display: inline;
+    font-size: 2rem;
+}

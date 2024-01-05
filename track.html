@@ -11,13 +11,15 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/orderdetails.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/fonts-styles.css">
+
     <title>Order Details</title>
 
 </head>
 
 <body>
 
-    <section class="navigation" style="margin-top: -3rem;">
+    <section class="navigation">
         <div class="nav-container">
             <div class="brand">
                 <a href="#!"><img src="./assets/img/logo.png" alt="" width="80px" height="80px"></a>
@@ -64,14 +66,20 @@
                                 <a href="./terms&condition.html">Terms&nbsp;&&nbsp;Conditions</a>
                             </li>
                         </ul>
-                    <li id="avatar-link">
-                        <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="30px" height="30px"
-                                    id="avatar"
-                                    style="display: inline; padding: 3px; padding-bottom: none;">Name</span></a>
-                    </li>
-                    <li>
-                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
+                        <li id="avatar-link">
+                            <a href="#"><span><img src="./assets/img/avatar.png" alt="" width="25px" height="25px" id="avatar" style="display: inline; margin-bottom: 5px;">Name</span></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./userProfile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <a href="./cart.html"><box-icon name='cart' type='solid' color='#ffffff' id="cart-icon" ></box-icon><sup id="cart-items-count">1</sup></a> -->
+                        </li>
             </nav>
         </div>
     </section>

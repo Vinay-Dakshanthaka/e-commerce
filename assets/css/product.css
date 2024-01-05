@@ -1,3 +1,6 @@
+*{
+    font-size: 1rem !important  ;
+}
 body{
     margin: 0;
     font-family: Poppins;
@@ -39,7 +42,7 @@ a{
     font-size: large;
 }
 .listProduct .item .price{
-    letter-spacing: 7px;
+    /* letter-spacing: 7px; */
     font-size: small;
 }
 /* detail page */
